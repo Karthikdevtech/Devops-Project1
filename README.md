@@ -7,16 +7,8 @@ This project demonstrates a production-grade, fault-tolerant web architecture de
 
 ## 🏗️ Architecture & Component Breakdown
 
-[ User / Browser ]
-│
-▼ (HTTP Request via Custom Domain / Public IP)
-[ Azure Public DNS Zone / GoDaddy Registrar ]
-│
-▼
-[ Azure Standard Load Balancer (Port 80) ]
-├─── Health Probe (HTTP / port 80)
-├───► [ Linux VM 1 (NGINX) ] ──► "Hello from Web VM 1"
-└───► [ Linux VM 2 (NGINX) ] ──► "Hello from Web VM 2"
+
+<img width="1198" height="412" alt="Screenshot 2026-10-14 113244" src="https://github.com/user-attachments/assets/6049b6bf-4eea-45aa-bcf4-93643c9fdace" />
 
 
 * **Azure Resource Group:** Logical container holding all related cloud resources.
